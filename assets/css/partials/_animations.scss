@@ -1,0 +1,17 @@
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 2s ease forwards;
+  opacity: 0;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1.5s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); opacity:1}
+}
